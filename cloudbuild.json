@@ -1,0 +1,11 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/gcloud",
+      "args": [
+        "pubsub", "topics", "publish", "notify.checkForUpdates.request",
+        "--message", "{\"type\":\"notify.checkForUpdates.request\",\"payload\":{\"commit\":\"$COMMIT_SHA\"},\"id\":\"01E5988V4HNZDMQQP7GXDZ5RPB\",\"sentAt\":1586227342481}"
+      ]
+    }
+  ]
+}
